@@ -1,3 +1,4 @@
+
 /* console.log(3 * 9);
 
 2 + 2;
@@ -165,8 +166,8 @@ console.log(newPosition); */
 
 // Typy proste nie mają właściwości i metod. Jak to się więc dzieje, że możemy pobrać ich właściwości czy wykonać na nich metody (jak na obiektach)?
 // 1 - tworzymy zmienną i wartość string
-const name = "Janek";
-name.length; //właściwość której nie ma w typie prostym, i teraz zaczyna pracować silnik, który robi sobie mniej więcej coś takiego jak ponizej by pobrać wartość tej właściwości
+// const name = "Janek";
+// name.length; //właściwość której nie ma w typie prostym, i teraz zaczyna pracować silnik, który robi sobie mniej więcej coś takiego jak ponizej by pobrać wartość tej właściwości
 // 2- SILNIK TWORZY OBIEKT NA TYM ETAPIE (nazwa zmiennejj tylko dla przykładu)
 //Tworzy obiekt String np.
 // const nameTemporary = new String(name);
@@ -176,8 +177,14 @@ name.length; //właściwość której nie ma w typie prostym, i teraz zaczyna pr
 /* Reasumując: Jeżeli wywołujemy metody, czy chcemy dostać sie do zawartości własciwości, to w tle tworzony jest tymaczowy obiekt danego typu, który "opakowuje" nasz typ prosty na czas dotarcia do właściwości czy wywowłania metody.*/
 
 // Możemy też tworzyć takie obiekty sami (abstachując już od opakowania typów prostych). Ale bardzo rzadko ma to sens, ponieważ takie obiekty mają częstoi inne zachowania niż typy proste np. każdy obiekt zwraca np. true, a operator typeof zwróci "object", a nie rodzaj typu prostego. problemy pojawią się także przy operatorze porównania "==="). Tworzenie obektu (String, Number, Boolean) jest trudniejsze niż prosty literał.
-const userName = new String("Jagienka");
-const userID = new Number(2);
-const famale = new Boolean(true);
+// const userName = new String("Jagienka");
+// const userID = new Number(2);
+// const famale = new Boolean(true);
 
 //Na przyszłość: String, Number i Boolean to przykłady konstrukturów czyli funkcji, które są używane do tworzenie instancji (niezależnej kopii) obiektów. Operator "new" tworzy nowy obiekt. Na tym etapie nie masz jeszcze szans tego zrozumieć, to zaawasnowany koncept programowania w JS, ale kiedy dojdziemy do programowania obiektowego będę to dobrze wyjaśniał i zrozumiesz ten mechanizm.
+
+
+// Operator truargmentowy :
+// const userName = "irek";
+
+// console.log( userName === "irek" ? 'Witaj Blantonogi i palcokręcocy' : 'SPierdalaj podriabiańcu');
