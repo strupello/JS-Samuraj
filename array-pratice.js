@@ -41,25 +41,25 @@
 
 // delete nameList[0];
 
-const placeWhereWasSmoking = [
-  "Miejscówka",
-  "Piwnica",
-  "Obidza",
-  "Sanatorium",
-  "U Gondka",
-  "U Kondzia",
-];
-placeWhereWasSmoking[placeWhereWasSmoking.length] = "U Grubego na browarnej";
-placeWhereWasSmoking[placeWhereWasSmoking.length] = "w Górach";
-placeWhereWasSmoking.length += 2; // placeWhereWasSmoking = placeWhereWasSmoking.lenght + 2;  -- dodanie dwóch kolejnych miesc w tablicy (mogą być puste)
-// placeWhereWasSmoking.length = 3; // skrócenie tablicy do danej ilości
-// placeWhereWasSmoking.length = 0; // wyzerowanei tablicy
-console.log(placeWhereWasSmoking);
-console.log(placeWhereWasSmoking.length);
-console.log(placeWhereWasSmoking[placeWhereWasSmoking.length - 3]); // pokazanie ostatniego elementu.
+// const placeWhereWasSmoking = [
+//   "Miejscówka",
+//   "Piwnica",
+//   "Obidza",
+//   "Sanatorium",
+//   "U Gondka",
+//   "U Kondzia",
+// ];
+// placeWhereWasSmoking[placeWhereWasSmoking.length] = "U Grubego na browarnej";
+// placeWhereWasSmoking[placeWhereWasSmoking.length] = "w Górach";
+// placeWhereWasSmoking.length += 2; // placeWhereWasSmoking = placeWhereWasSmoking.lenght + 2;  -- dodanie dwóch kolejnych miesc w tablicy (mogą być puste)
+// // placeWhereWasSmoking.length = 3; // skrócenie tablicy do danej ilości
+// // placeWhereWasSmoking.length = 0; // wyzerowanei tablicy
+// console.log(placeWhereWasSmoking);
+// console.log(placeWhereWasSmoking.length);
+// console.log(placeWhereWasSmoking[placeWhereWasSmoking.length - 3]); // pokazanie ostatniego elementu.
 
-const smokers = [];
-smokers.length = 5;
+// const smokers = [];
+// smokers.length = 5;
 
-console.log(smokers);
-console.log(smokers.length);
+// console.log(smokers);
+// console.log(smokers.length);
