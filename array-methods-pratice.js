@@ -84,11 +84,11 @@
 // METODA SORT
 
 // INDEXOF
-const typeOfPlayers = ["NOOB", "CASUAL", "PRO", "HARDCORE", "TRYHARD", "SMURF"];
+// const typeOfPlayers = ["NOOB", "CASUAL", "PRO", "HARDCORE", "TRYHARD", "SMURF"];
 //  typeOfPlayers.sort(); // - zmienia tablice alfabetycznie, również jako obiekt
 // typeOfPlayers.indexOf('CASUAL') // - pokazuję nam czy jest dany index w tablicy i na której pozycji.
 // typeOfPlayers.indexOf('CASUA') // - pokazuję nam czy jest dany index w tablicy i na której pozycji - w tym wypadku pokaze nam -1 - czyli brak - musi być 1:1.
-console.log(typeOfPlayers);
+// console.log(typeOfPlayers);
 
 // INCLUDES
 // console.log(typeOfPlayers.includes("CASUAL")); // bardzo podobna metoda do indexof, ale includes zwraca nam po prostu informacje true/false czy jest w danej tablicy a indexof pozycje jak jest.
@@ -102,3 +102,14 @@ console.log(typeOfPlayers);
 // typeOfPlayers.reverse(); - odwracamy kolejność
 
 // METODA SPLIT KTÓRA TWORZY NAM TABLIE Z STRINGÓW
+
+// const letters = "Marek Adam Justyna Teresa".split('');
+
+// "Marek Adam Justyna Teresa".split(' ');
+// "Gdańsk,Elbląg,Gdynia,Sopot,Władysławowo,Hel".split(',')
+//  ;
+// "Gdańsk, Elbląg, Gdynia, Sopot, Władysławowo, Hel".split(',', 3);
+// "Gdańsk, Elbląg, Gdynia, Sopot, Władysławowo, Hel".split(', ', 3);
+
+// const datesOfBirth = "1967,1982, 1990, 1998, 1976"
+// datesOfBirth.split(',')
