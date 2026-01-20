@@ -45,49 +45,61 @@
 // }
 // console.log(proCount);
 
-const temp = 16;
+// const temp = 16;
 
-if (temp < 0) {
-  console.log("Mróz");
-} else if (temp <= 15) {
-  console.log("zimno");
-} else {
-  console.log("ciepło");
+// if (temp < 0) {
+//   console.log("Mróz");
+// } else if (temp <= 15) {
+//   console.log("zimno");
+// } else {
+//   console.log("ciepło");
+// }
+
+// const prices = [12, 55, 8, 101, 33];
+
+// if (prices[0] >= prices[prices.length - 1]) {
+//   console.log("first cheaper");
+// } else {
+//   console.log("last cheaper");
+// }
+
+// const levels = [1, 4, 7, 2, 9, 10, 3];
+// let howManyLevels = 0;
+// for (let i = 0; i < levels.length; i++) {
+//   if (levels[i] >= 7) howManyLevels = howManyLevels + 1;
+// }
+// if (howManyLevels >= 3) {
+//   console.log("HIGH LEVEL");
+// } else {
+//   console.log("LOW LEVEL");
+// }
+// console.log(howManyLevels);
+
+// const sentence = "js jest trudny ale wchodzi".split(" ");
+// const quantitySentence = sentence.length;
+// const checkTextOnSentence = sentence.includes("trudny");
+// console.log(quantitySentence);
+// console.log(checkTextOnSentence);
+
+// const hasKey = true;
+// const hasTicket = false;
+
+// if (hasKey && hasTicket) {
+//   console.log("Wchodzisz");
+// } else if (hasKey || hasTicket) {
+//   console.log("prawie");
+// } else {
+//   console.log("nie wchodzisz");
+// }
+
+const numbers = [5, 6, 8, 9, 16, 78, 66];
+let howManyNumbers = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] >= 7) howManyNumbers = howManyNumbers + 1;
 }
+if (howManyNumbers <= 7) {
+  console.log("It is a enough");
+} else {console.log("To little");}
 
-const prices = [12, 55, 8, 101, 33];
-
-if (prices[0] >= prices[prices.length - 1]) {
-  console.log("first cheaper");
-} else {
-  console.log("last cheaper");
-}
-
-const levels = [1, 4, 7, 2, 9, 10, 3];
-let howManyLevels = 0;
-for (let i = 0; i < levels.length; i++) {
-  if (levels[i] >= 7) howManyLevels = howManyLevels + 1;
-}
-if (howManyLevels >= 3) {
-  console.log("HIGH LEVEL");
-} else {
-  console.log("LOW LEVEL");
-}
-console.log(howManyLevels);
-
-const sentence = "js jest trudny ale wchodzi".split(" ");
-const quantitySentence = sentence.length;
-const checkTextOnSentence = sentence.includes("trudny");
-console.log(quantitySentence);
-console.log(checkTextOnSentence);
-
-const hasKey = true;
-const hasTicket = false;
-
-if (hasKey && hasTicket) {
-  console.log("Wchodzisz");
-} else if (hasKey || hasTicket) {
-  console.log("prawie");
-} else {
-  console.log("nie wchodzisz");
-}
+console.log(howManyNumbers);

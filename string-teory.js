@@ -18,7 +18,7 @@ const secondLetter = userName[1]; //jak z tablicy - poznasz przy tablicy
 
 // tworzenie instancji (obiektu) String
 const objUserName = new String(userName); // obiekt
-const primitiveUserName = userName; //typ prsty
+const primitiveUserName = userName; //typ prosty
 
 
 // typ prosty
