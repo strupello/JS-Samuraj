@@ -92,14 +92,27 @@
 //   console.log("nie wchodzisz");
 // }
 
-const numbers = [5, 6, 8, 9, 16, 78, 66];
-let howManyNumbers = 0;
+// const numbers = [5, 6, 8, 9, 16, 78, 66];
+// let howManyNumbers = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] >= 7) howManyNumbers = howManyNumbers + 1;
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] >= 7) howManyNumbers = howManyNumbers + 1;
+// }
+// if (howManyNumbers <= 7) {
+//   console.log("It is a enough");
+// } else {console.log("To little");}
+
+// console.log(howManyNumbers);
+
+
+const points = [2, 0, 5, 7, 1, 9];
+let howManyPointsAboveFour = 0;
+
+for (let i = 0; i < points.length; i++) {
+  if (points[i] > 4) howManyPointsAboveFour = howManyPointsAboveFour + 1;
 }
-if (howManyNumbers <= 7) {
-  console.log("It is a enough");
-} else {console.log("To little");}
-
-console.log(howManyNumbers);
+if (howManyPointsAboveFour >= 3) {
+  console.log("GOOD");
+} else { console.log("BAD");
+}
+console.log(howManyPointsAboveFour);
