@@ -173,7 +173,7 @@
 //   console.log(itIsNoNumberSubtract);
 //   return itIsNoNumberSubtract;
 // }
-// subtractOne(21, subtractOne);
+// iDontKnow(21, subtractOne);
 
 // // document.body.addEventListener("click", function () {
 // //   console.log("pierwszy click z funkcja");
@@ -198,7 +198,7 @@
 
 // const heroLevels = [10, 15, 55, 145, 555, 678, 899, 999, 1000];
 
-// heroLevels.forEach(heroLevels => console.log(`Level hero is ${heroLevels}`));
+// heroLevels.forEach(level => console.log(`Level hero is ${heroLevels}`));
 // heroLevels.forEach(function(heroLevels) {console.log("Levels hero is " + heroLevels);});
 
 // // arguments
@@ -217,24 +217,86 @@
 // console.log(addItemPower(22, 444.44, 55555, 555));
 
 
-function infoAboutPlayers(race, type, levels, powers) {
-  if (arguments.length === 0) {
-    console.log('We dont know anything about player');
-  }
-  else if (arguments.length === 1) {
-    console.log(`We know this player is ${race}`);
-  }
-  else if (arguments.length === 2) {
-    console.log(`We know this player is ${race} ${type} `);
-  }
-  else if (arguments.length === 3) {
-    console.log(`We know this player is ${race} and ${type} on ${levels} `);
-  } else {
-    console.log(`We know this player is ${race} and ${type} on ${levels} and he have ${powers} `)
-  }
-}
-console.log(infoAboutPlayers());
-console.log(infoAboutPlayers("Humanoid"));
-console.log(infoAboutPlayers("Humanoid", "mage"));
-console.log(infoAboutPlayers("Humanoid", "mage", 30));
-console.log(infoAboutPlayers("Humanoid", "mage", 30, 550));
+// function infoAboutPlayers(race, type, levels, powers) {
+//   if (arguments.length === 0) {
+//     console.log('We dont know anything about player');
+//   }
+//   else if (arguments.length === 1) {
+//     console.log(`We know this player is ${race}`);
+//   }
+//   else if (arguments.length === 2) {
+//     console.log(`We know this player is ${race} ${type} `);
+//   }
+//   else if (arguments.length === 3) {
+//     console.log(`We know this player is ${race} and ${type} on ${levels} `);
+//   } else {
+//     console.log(`We know this player is ${race} and ${type} on ${levels} and he have ${powers} `)
+//   }
+// }
+// console.log(infoAboutPlayers());
+// console.log(infoAboutPlayers("Humanoid"));
+// console.log(infoAboutPlayers("Humanoid", "mage"));
+// console.log(infoAboutPlayers("Humanoid", "mage", 30));
+// console.log(infoAboutPlayers("Humanoid", "mage", 30, 550));
+
+
+// function aboutHeroChange(race = "Humanoid", type = "mage", levels = 30, powers = 550) {
+//     return `We know this player is ${race} and ${type} on ${levels} and he have ${powers} `;
+// }
+// console.log(aboutHeroChange("Humanoid", "mage", 30, 550));
+
+
+// function calculate(x, callback){
+//     return callback(x);
+// }
+//     function addTen(n){
+//         return n + 10;
+//     }
+//         function triple(n){
+//         return n * 3;
+//     }
+
+// console.log(calculate(5, addTen));
+// console.log(calculate(5, triple));
+
+// function calculate2(x, y, callback){
+//     return callback (x, y)
+// }
+//     function add(a, s) {
+//         return a + s;
+//     }
+//     function subtract (a, s){
+//         return a - s;
+//     }
+// console.log(calculate2(10, 5, add));
+// console.log(calculate2(10, 5, subtract));
+
+
+// function allInformation(...infos) {
+//     console.log(infos[4]);
+//     console.log(arguments[5]);
+//     return infos;
+// }
+// allInformation("Czarek", "pieczarek", 44, 55, 77, "Kotek rozporek", 55);
+
+
+// function addAllNickName(...nickNames) {
+// let info = "";
+// // for (let i = 0; i < nickNames.length; i++)
+// //     info += `${nickNames[i]}-prze chuj wariat `;
+// nickNames.forEach(function(nickName){
+//     info += nickName + " prze chuj wariacina psina ";
+// })
+// console.log(info);
+// }
+// addAllNickName("Strup", 12, "Bzyku", 55, "Adamus", 44);
+
+
+// // z dwoma argumentami
+
+// function showPlayers(host, ...otherPlayers) {
+//     console.log(`In the game is now ${host} ${otherPlayers.length ? "and in the lost tower farming right now: " + otherPlayers + "." : "." }`);
+// }
+
+// showPlayers("Strup");
+// showPlayers("Strup", "Kondzio ", "Gruby ", "Dana ");
