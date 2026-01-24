@@ -187,7 +187,6 @@
 
 // document.body.addEventListener("click", clickClick);
 
-
 // setInterval(() => console.log("mineły 5 sek"), 5000);
 
 // const fiveSecond = () => {
@@ -195,14 +194,12 @@
 // }
 // setInterval(fiveSecond, 5000);
 
-
 // const heroLevels = [10, 15, 55, 145, 555, 678, 899, 999, 1000];
 
 // heroLevels.forEach(level => console.log(`Level hero is ${heroLevels}`));
 // heroLevels.forEach(function(heroLevels) {console.log("Levels hero is " + heroLevels);});
 
 // // arguments
-
 
 // const addItemPower = function () {
 //   let result = 0;
@@ -215,7 +212,6 @@
 // const usersItemPower = addItemPower (50, 144, 4444, 5555, 222222);
 
 // console.log(addItemPower(22, 444.44, 55555, 555));
-
 
 // function infoAboutPlayers(race, type, levels, powers) {
 //   if (arguments.length === 0) {
@@ -239,12 +235,10 @@
 // console.log(infoAboutPlayers("Humanoid", "mage", 30));
 // console.log(infoAboutPlayers("Humanoid", "mage", 30, 550));
 
-
 // function aboutHeroChange(race = "Humanoid", type = "mage", levels = 30, powers = 550) {
 //     return `We know this player is ${race} and ${type} on ${levels} and he have ${powers} `;
 // }
 // console.log(aboutHeroChange("Humanoid", "mage", 30, 550));
-
 
 // function calculate(x, callback){
 //     return callback(x);
@@ -271,14 +265,12 @@
 // console.log(calculate2(10, 5, add));
 // console.log(calculate2(10, 5, subtract));
 
-
 // function allInformation(...infos) {
 //     console.log(infos[4]);
 //     console.log(arguments[5]);
 //     return infos;
 // }
 // allInformation("Czarek", "pieczarek", 44, 55, 77, "Kotek rozporek", 55);
-
 
 // function addAllNickName(...nickNames) {
 // let info = "";
@@ -291,7 +283,6 @@
 // }
 // addAllNickName("Strup", 12, "Bzyku", 55, "Adamus", 44);
 
-
 // // z dwoma argumentami
 
 // function showPlayers(host, ...otherPlayers) {
@@ -300,3 +291,44 @@
 
 // showPlayers("Strup");
 // showPlayers("Strup", "Kondzio ", "Gruby ", "Dana ");
+
+// function calculateAverage(numbers) {
+//     let sum = 0;
+//     for ( let i = 0; i < numbers.length; i++)
+//         sum += numbers[i]
+//     return sum / numbers.length
+// }
+// console.log(calculateAverage([1, 2, 3, 4, 5]));
+
+
+
+
+
+
+function filterEvenNumbers1(number) {
+  let filterDa = [];
+  for (let i = 0; i < number.length; i++) {
+    if (number[i] % 2 === 0) {
+      filterDa.push(number[i]);
+    }
+  }
+  return filterDa;
+}
+console.log(filterEvenNumbers1([1, 2, 3, 4, 5, 6]));
+
+
+
+
+
+
+
+function filterEvenNumbers(numbers) {
+  let evenNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenNumbers.push(numbers[i]);
+    }
+  }
+  return evenNumbers;
+}
+console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
