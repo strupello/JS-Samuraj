@@ -286,11 +286,18 @@
 // // z dwoma argumentami
 
 // function showPlayers(host, ...otherPlayers) {
-//     console.log(`In the game is now ${host} ${otherPlayers.length ? "and in the lost tower farming right now: " + otherPlayers + "." : "." }`);
+//   console.log(
+//     `In the game is now ${host} ${otherPlayers.length ? "and in the lost tower farming right now: " + otherPlayers + "." : "."}`,
+//   );
 // }
-
 // showPlayers("Strup");
 // showPlayers("Strup", "Kondzio ", "Gruby ", "Dana ");
+
+// function showBetterPlayers(rest) {
+//   return { ...rest };
+// }
+
+// console.log(showBetterPlayers(["hi", "ho2"]));
 
 // function calculateAverage(numbers) {
 //     let sum = 0;
@@ -300,35 +307,24 @@
 // }
 // console.log(calculateAverage([1, 2, 3, 4, 5]));
 
+// function filterEvenNumbers1(number) {
+//   let filterDa = [];
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 2 === 0) {
+//       filterDa.push(number[i]);
+//     }
+//   }
+//   return filterDa;
+// }
+// console.log(filterEvenNumbers1([1, 2, 3, 4, 5, 6]));
 
-
-
-
-
-function filterEvenNumbers1(number) {
-  let filterDa = [];
-  for (let i = 0; i < number.length; i++) {
-    if (number[i] % 2 === 0) {
-      filterDa.push(number[i]);
-    }
-  }
-  return filterDa;
-}
-console.log(filterEvenNumbers1([1, 2, 3, 4, 5, 6]));
-
-
-
-
-
-
-
-function filterEvenNumbers(numbers) {
-  let evenNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      evenNumbers.push(numbers[i]);
-    }
-  }
-  return evenNumbers;
-}
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+// function filterEvenNumbers(numbers) {
+//   let evenNumbers = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//       evenNumbers.push(numbers[i]);
+//     }
+//   }
+//   return evenNumbers;
+// }
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
