@@ -54,7 +54,7 @@ function funkcjaNazwana() {
  console.log("jestem");
 }
 
-// funkcjaConst() //błąd - nie jest zdefiniowe, bo zmienna const nie podelga hoistingowi
+// funkcjaConst() //błąd - nie jest zdefiniowe, bo zmienna const nie podelga hoistingowi po let też
 
 console.log(funkcjaVar)
 // funkcjaVar() // na tym etapie (przed stworzeniem) będzie zawierała undefined więc tak naprawdę próbujemy tu zrobić coś takiego undefined()

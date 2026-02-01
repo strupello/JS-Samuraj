@@ -287,15 +287,38 @@ console.log(
   ]),
 );
 
-
 function howMuchNumberMoreThanHundred(numbers) {
   let count = 0;
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > 100) {
       count++;
     }
-}
-return count;
+  }
+  return count;
 }
 console.log(howMuchNumberMoreThanHundred([10, 150, 30, 200]));
 console.log(howMuchNumberMoreThanHundred([1, 20, 99]));
+
+function numbersThanMoreFifty(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 50) {
+      return numbers[i];
+    }
+  }
+  return null;
+}
+console.log(numbersThanMoreFifty([6, 55, 7, 60, 77]));
+console.log(numbersThanMoreFifty([6, 7]));
+
+function howMuchNumberLessZero(numbers) {
+  let count = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < 0)
+    {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(howMuchNumberLessZero([6, 55, 7, 60, 77]));
+console.log(howMuchNumberLessZero([6, 55, 7, 60, 77, -8, -7, -6]));
