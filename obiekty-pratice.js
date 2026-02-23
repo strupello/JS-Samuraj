@@ -130,9 +130,9 @@ const chanceToRecoverStatus = newPatient[0].chanceToRecover
   : "nie przeżyje";
 let newParametrToCheck = "namePatient";
 let newParametrToCheck1 = "chanceToRecover";
-console.log(
-  `Pacjent: ${newPatient[0][newParametrToCheck]} ${chanceToRecoverStatus}`,
-);
+// // console.log(
+//   `Pacjent: ${newPatient[0][newParametrToCheck]} ${chanceToRecoverStatus}`,
+// );
 
 newPatient.push({
   namePatient: "Donald",
@@ -152,21 +152,21 @@ const newPatients = [
     namePatient: "Emmy",
     patientId: 69,
     disease: "dildo in Ass",
-    chanceToRecover: false,
+    chanceToRecover: true,
   },
 ];
-console.log(newPatient[5].chanceToRecover);
-console.log(newPatient);
-console.log(newPatients[6].disease, newPatients[6].patientId);
-console.log(newPatients);
+// console.log(newPatient[5].chanceToRecover);
+// console.log(newPatient);
+// console.log(newPatients[6].disease, newPatients[6].patientId);
+// console.log(newPatients);
 
 newPatients.forEach((patient) => {
   const status = patient.chanceToRecover
     ? "has a chance of survival"
     : "has no chance of survival";
-  console.log(
-    `This is: ${patient.namePatient} and ID: ${patient.patientId}, and is sick with ${patient.disease} and it has: ${status}`,
-  );
+  // console.log(
+  //   `This is: ${patient.namePatient} and ID: ${patient.patientId}, and is sick with ${patient.disease} and it has: ${status}`,
+  // );
 });
 
 // newPatients.forEach((patient) => {
@@ -186,25 +186,51 @@ newPatients.forEach((patient) => {
 //     console.log(patient);
 // });
 
-newPatients.forEach((patient) => {
-  if(patient.patientId > 13 &&
-  patient.disease == "CANCER") {
-    console.log(patient.namePatient);
-  }
-});
+// newPatients.forEach((patient) => {
+//   if(patient.patientId > 13 &&
+//   patient.disease == "CANCER") {
+//     console.log(patient.namePatient);
+//   }
+// });
 
-function getLifeExpectancy(newPatients) {
-  newPatients.forEach((patient) =>{
-    const status = patient.chanceToRecover
-    ? "has a chance of survival"
-    : "has no chance of survival";
-    console.log(`Name Patient: ${patient.namePatient} status to recovery:${status}`);
-  });
-}
-getLifeExpectancy(newPatients);
+// function getLifeExpectancy(newPatients) {
+//   newPatients.forEach((patient) =>{
+//     const status = patient.chanceToRecover
+//     ? "has a chance of survival"
+//     : "has no chance of survival";
+//     console.log(`Name Patient: ${patient.namePatient} status to recovery:${status}`);
+//   });
+// }
+// getLifeExpectancy(newPatients);
+
+
 
 function skarbnik(newPatients) {
-  newPatients.forEach((patitent) => {
-    if (patient.chanceToRecover == true)
-});
+  let count = 0;
+  for (let i = 0; i < newPatients.length; i++) {
+    if (newPatients[i].chanceToRecover === true) {
+      count++;
+    }
+  }
+  return count;
 }
+console.log(skarbnik(newPatients));
+
+function getSurvivors(newPatients) {
+let survivors = [];
+  for (let i = 0; i < newPatients.length; i++) {
+    if (newPatients[i].chanceToRecover === true) {
+      survivors.push(newPatients[i]);
+    }
+  }
+  return survivors;
+}
+console.log(getSurvivors(newPatients));
+
+function findPatient(newPatients) {
+  for (let i = 0; i < newPatients.length; i++) {
+    if (newPatients[i].namePatient === "Jan");
+  }
+  return ;
+}
+console.log(findPatient(newPatients));
