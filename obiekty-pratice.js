@@ -203,8 +203,6 @@ newPatients.forEach((patient) => {
 // }
 // getLifeExpectancy(newPatients);
 
-
-
 function skarbnik(newPatients) {
   let count = 0;
   for (let i = 0; i < newPatients.length; i++) {
@@ -217,7 +215,7 @@ function skarbnik(newPatients) {
 console.log(skarbnik(newPatients));
 
 function getSurvivors(newPatients) {
-let survivors = [];
+  let survivors = [];
   for (let i = 0; i < newPatients.length; i++) {
     if (newPatients[i].chanceToRecover === true) {
       survivors.push(newPatients[i]);
@@ -227,10 +225,50 @@ let survivors = [];
 }
 console.log(getSurvivors(newPatients));
 
-function findPatient(newPatients) {
+function findPatient(newPatients, searchedName) {
   for (let i = 0; i < newPatients.length; i++) {
-    if (newPatients[i].namePatient === "Jan");
+    if (newPatients[i].namePatient === searchedName) {
+      return newPatients[i];
+    }
   }
-  return ;
 }
-console.log(findPatient(newPatients));
+console.log(findPatient(newPatients, "Donald"));
+
+const cart = [
+  {
+    name: "Klawiatura",
+    price: 200,
+    inStock: true,
+  },
+  {
+    nameProduct: "Mouse",
+    price: 150,
+    inStock: false,
+  },
+  {
+    nameProduct: "Monitor",
+    price: 1500,
+    inStock: true,
+  },
+  {
+    nameProduct: "Speakers",
+    price: 200,
+    inStock: false,
+  },
+  {
+    nameProduct: "PC",
+    price: 8000,
+    inStock: true,
+  },
+];
+
+function calculateTotal(cart) {
+  let total = 0;
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].inStock === true) {
+      total += cart[i].price;
+    }
+  }
+  return total;
+}
+console.log(calculateTotal(cart));
