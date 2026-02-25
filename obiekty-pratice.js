@@ -272,3 +272,5 @@ function calculateTotal(cart) {
   return total;
 }
 console.log(calculateTotal(cart));
+document.getElementById("calculateBtn").addEventListener("click", function () {calculateTotal(cart)});
+document.getElementById("totalPrice").innerText = calculateTotal(cart);
